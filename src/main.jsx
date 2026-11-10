@@ -55,6 +55,7 @@ function App() {
   const [active, setActive] = useState('Home');
   const [query, setQuery] = useState('');
   const [showComposer, setShowComposer] = useState(false);
+  const [showSignIn, setShowSignIn] = useState(false);
   const [posts, setPosts] = useState(demoPosts);
   const [saved, setSaved] = useState([]);
   const [notice, setNotice] = useState('Preview mode — the database connection will be added in the next step.');
