@@ -110,7 +110,7 @@ function App() {
        <div className="top-actions">
   <button
     className="sign-in-button"
-    onClick={() => setNotice('Sign-in will be connected during account setup.')}
+    onClick={() => setShowSignIn(true)}
   >
     Sign in
   </button>
