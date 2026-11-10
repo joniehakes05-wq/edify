@@ -106,19 +106,27 @@ function App() {
           That all may be edified of all <span>— D&C 88:122</span>
         </div>
 
-        <div className="top-actions">
-          <button className="icon-button" aria-label="Notifications"
-            onClick={() => setNotice('Notifications will be available after account setup.')}>
-            <Bell size={19}/>
-          </button>
-          <button className="avatar small-avatar" aria-label="Profile"
-            onClick={() => setActive('Profile')}>E</button>
-          <button className="icon-button mobile-menu" aria-label="Menu"
-            onClick={() => setShowMenu(!showMenu)}>
-            <Menu size={20}/>
-          </button>
-        </div>
-      </header>
+       <div className="top-actions">
+  <button
+    className="sign-in-button"
+    onClick={() => setNotice('Sign-in will be connected during account setup.')}
+  >
+    Sign in
+  </button>
+
+  <button className="icon-button" aria-label="Notifications"
+    onClick={() => setNotice('Notifications will be available after account setup.')}>
+    <Bell size={19}/>
+  </button>
+
+  <button className="avatar small-avatar" aria-label="Profile"
+    onClick={() => setActive('Profile')}>E</button>
+
+  <button className="icon-button mobile-menu" aria-label="Menu"
+    onClick={() => setShowMenu(!showMenu)}>
+    <Menu size={20}/>
+  </button>
+</div>
 
       <div className="layout">
         <aside className={`sidebar ${showMenu ? 'sidebar-open' : ''}`}>
