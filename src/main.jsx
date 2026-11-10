@@ -129,6 +129,7 @@ function App() {
   </button>
 </div>
 
+        </header>
       <div className="layout">
         <aside className={`sidebar ${showMenu ? 'sidebar-open' : ''}`}>
           <div className="sidebar-label">YOUR SPACE</div>
