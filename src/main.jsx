@@ -319,6 +319,47 @@ function App() {
         </aside>
       </div>
 
+{showSignIn && (
+  <div className="modal-backdrop" onClick={() => setShowSignIn(false)}>
+    <div className="composer-modal sign-in-modal" onClick={e => e.stopPropagation()}>
+      <button
+        className="close-button"
+        onClick={() => setShowSignIn(false)}
+        type="button"
+      >
+        ×
+      </button>
+
+      <div className="sign-in-heading">
+        <div className="brand-mark">
+          <Leaf size={22}/>
+        </div>
+        <h2>Welcome back</h2>
+        <p>That all may be edified of all.</p>
+      </div>
+
+      <form onSubmit={e => {
+        e.preventDefault();
+        setNotice('Account sign-in will be connected in a future step.');
+        setShowSignIn(false);
+      }}>
+        <label>Email address</label>
+        <input type="email" placeholder="Enter your email" required />
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password" required />
+
+        <button className="primary-button" type="submit">
+          Sign in
+        </button>
+      </form>
+
+      <p className="fine-print">
+        This is a design preview. Account access is not active yet.
+      </p>
+    </div>
+  </div>
+)}
       {showComposer && (
         <div className="modal-backdrop" onClick={() => setShowComposer(false)}>
           <form className="composer-modal"
