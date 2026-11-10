@@ -804,3 +804,20 @@ h1 {
 .sign-in-button:hover {
   background: #71836a;
 }
+
+.sign-in-button {
+  border: 1px solid #87977f;
+  background: #87977f;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.sign-in-button:hover {
+  background: #71836a;
+}
